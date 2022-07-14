@@ -1,4 +1,3 @@
 student/student.pb.go
 student/student_grpc.pb.go
 go.mod
-go.sum
