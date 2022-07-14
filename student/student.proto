@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option go_package = "gorpc.com";
+
+option java_multiple_files=true;
+
+package student;
+
+service StudentService {
+  rpc SayHello(StudentRequest) returns(MessageResponse){}
+}
+
+message StudentRequest {
+  string name = 1;
+  string nim = 2;
+  string class = 3;
+}
+
+message MessageResponse {
+  StudentRequest data = 1;
+  string createdAt =2;
+}
